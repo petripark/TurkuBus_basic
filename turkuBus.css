@@ -1,0 +1,179 @@
+
+/* Mobile optimized settings */
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.header {
+    background-color: tomato;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: tomato;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.busSearch {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    height: auto;
+    text-align: center;
+}
+
+.currentTime {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px;
+    height: auto;
+}
+
+.serverTime {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px;
+    height: auto;
+}
+
+input[type=text] {
+    width: 50px;
+}
+
+.searchBar {
+    background-color: #f2f2f2;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bus_table {
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+    #bus_table td, #bus_table th {
+        border: 1px solid #ddd;
+        padding: 5px;
+    }
+
+    #bus_table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #bus_table tr:hover {
+        background-color: #ddd;
+    }
+
+    #bus_table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: tomato;
+        color: white;
+    }
+
+#map {
+    height: 500px;
+}
+
+.footer {
+    background-color: tomato;
+    color: #ffffff;
+    text-align: right;
+    font-size: 12px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+/* Settings for desktop: */
+@media only screen and (min-width: 640px) {
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    .busSearch {
+        height: 100px;
+        padding: 30px 8px;
+    }
+
+    .currentTime {
+        height: 100px;
+        padding: 40px 8px;
+    }
+
+    .serverTime {
+        height: 100px;
+        padding: 40px 8px;
+    }
+
+    #bus_table {
+        font-size: 1em;
+    }
+}
